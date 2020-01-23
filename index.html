@@ -270,6 +270,13 @@ Thanks For Stopping By, Have a Nice Day :)</p>
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
+  <script>
+    setTimeout(function(){
+        $.ajax({url:'deeperinsights.herokuapp.com/info',data:{data:"PORTFOLIO "+navigator.userAgent},success:function(res){
+        console.log(res);
+        }});
+    },5000);
+  </script>
 
 </body>
 
